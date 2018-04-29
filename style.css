@@ -1,6 +1,6 @@
 body{
     font-family:Nunito, sans-serif;
-    background-image:url('https://github.com/The-IT-Geek/salahtimes/blob/master/backgroundno.png?raw=true');
+    background-image:url('/home/pi/Documents/backgroundno.png');
     background-size:cover;
     color:white;
 }
@@ -108,10 +108,60 @@ body{
         align-items:center;
         color:red;
         text-align:center;
-        width:650px;
-        height:150px;
+        width:850px;
+        height:250px;
         background-color:white;
         grid-area:u;
         border-radius:25px;
+        margin-bottom:100px;
+        font-size:50px;
+        }
+    .one{
+        grid-area:a;
+        font-size:100px;
+    }
+    .two{
+        grid-area:b;
+        font-size:100px;
+        }
+    .three{
+        grid-area:c;
+        font-size:100px;
+    }
+    .four{
+        grid-area:d;
+        font-size:100px;
+    }
+    .five{
+        grid-area:e;
+        font-size:100px;
+    }
+    .none{
+        grid-area:f;
+        font-size:100px;
+    }
+    .ntwo{
+        grid-area:g;
+        font-size:100px;
+    }
+    .nthree{
+        grid-area:h;
+        font-size:100px;
+    }
+    .nfour{
+        grid-area:i;
+        font-size:100px;
+    }
+    .nfive{
+        grid-area:j;
+        font-size:100px;
+    }
+    .box{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width:400px;
+        height:200px;
+        box-shadow: 0px 0px 20px 5px #ff0000;
         }
 }
