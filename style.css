@@ -116,6 +116,9 @@ body{
         margin-bottom:100px;
         font-size:50px;
         }
+    .container{
+        margin-top:-50px;
+        }
     .one{
         grid-area:a;
         font-size:100px;
