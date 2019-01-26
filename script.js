@@ -27,7 +27,7 @@ function pos() {
   console.log(data.coords.longitude);
   console.log(timestamp);
   $(document).ready(function(){
-    $.getJSON('https://api.aladhan.com/v1/timings/'+timestamp+'?latitude='+data.coords.latitude+'&longitude='+data.coords.longitude+'&method=9&school=1&tune=0,35,0,60,95,110,0,75,0', function(data1){
+    $.getJSON('https://api.aladhan.com/v1/timings/'+timestamp+'?latitude='+data.coords.latitude+'&longitude='+data.coords.longitude+'&method=13&school=1&tune=0,35,0,60,95,110,0,75,0', function(data1){
         var fajr = data1.data.timings.Fajr;
         var zuhur = data1.data.timings.Dhuhr;
         var asr = data1.data.timings.Asr;
