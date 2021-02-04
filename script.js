@@ -44,6 +44,30 @@
 // }
 
 $.getJSON("2021.json", function(result){
-  var feb = $(result.Feb);
-  console.log(feb);
+  var month = new Array();
+  month[0] = "Jan";
+  month[1] = "Feb";
+  month[2] = "Mar";
+  month[3] = "Apr";
+  month[4] = "May";
+  month[5] = "Jun";
+  month[6] = "Jul";
+  month[7] = "Aug";
+  month[8] = "Sep";
+  month[9] = "Oct";
+  month[10] = "Nov";
+  month[11] = "Dec";
+
+  var d = new Date();
+  var n = month[d.getMonth()];
+
+  var da = new Date();
+  var na = d.getDate();
+  if(n=="Feb"){
+    var feb = $(result.Feb[0]);
+    var data = feb.na;
+    console.log(data);
+  } else{
+    console.log("no")
+  }
 });
