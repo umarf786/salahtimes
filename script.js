@@ -72,11 +72,13 @@ $.getJSON("2021.json", function(result){
     console.log(data[0][nas]);
 
     var fajr = data[0][nas]["Subah\nSadiq"];
+    var sunrise = data[0][nas].Sunrise;
     var zuhur = data[0][nas].Zohar;
     var asr = data[0][nas].Asar;
     var maghrib = data[0][nas].Sunset;
     var isha = data[0][nas].Esha;
     $('.fajar').html(fajr);
+    $('.sunrise').html(sunrise);
     $('.zuhur').html(zuhur);
     $('.asr').html(asr);
     $('.maghrib').html(maghrib);
