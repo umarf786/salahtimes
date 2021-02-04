@@ -63,10 +63,10 @@ var da = new Date();
 var na = da.getDate();
 $.getJSON("2021.json", function(result){
 
-  if(n=="Mar"){
+  if(n=="Feb"){
     var feb = $(result.Feb[0]);
-    var data = feb.na;
-    console.log("yes");
+    var data = feb;
+    console.log(data);
   } else{
     console.log("no")
   }
