@@ -58,9 +58,11 @@ month[11] = "Dec";
 
 var d = new Date();
 var n = month[d.getMonth()];
+console.log(n);
 
 var da = new Date();
 var na = da.getDate();
+console.log(na);
 $.getJSON("2021.json", function(result){
 
   if(n=="Feb"){
