@@ -68,7 +68,21 @@ $.getJSON("2021.json", function(result){
   if(n=="Feb"){
     var feb = $(result.Feb);
     var data = feb;
+    var dataday = data[0][nas];
     console.log(data[0][nas]);
+
+    var fajr = data[0][nas]["Subah\nSadiq"];
+    var zuhur = data[0][nas].Zohar;
+    var asr = data[0][nas].Asar;
+    var maghrib = data[0][nas].Maghrib;
+    var isha = data[0][nas].Esha;
+    $('.fajar').html(fajr);
+    $('.zuhur').html(zuhur);
+    $('.asr').html(asr);
+    $('.maghrib').html(maghrib);
+    $('.isha').html(isha);
+
+
   } else{
     console.log("no")
   }
