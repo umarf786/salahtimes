@@ -62,13 +62,14 @@ console.log(n);
 
 var da = new Date();
 var na = da.getDate();
-console.log(na);
+var nas = na.toString();
+console.log(nas);
 $.getJSON("2021.json", function(result){
 
   if(n=="Feb"){
     var feb = $(result.Feb);
     var data = feb;
-    console.log(data.4);
+    console.log(data[nas]);
   } else{
     console.log("no")
   }
