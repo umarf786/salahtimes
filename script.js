@@ -44,5 +44,6 @@
 // }
 
 $.getJSON("2021.json", function(result){
-  console.log(result);
+  var feb = result.2021.Feb;
+  console.log(feb);
 });
