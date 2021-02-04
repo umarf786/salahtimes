@@ -74,7 +74,7 @@ $.getJSON("2021.json", function(result){
     var fajr = data[0][nas]["Subah\nSadiq"];
     var zuhur = data[0][nas].Zohar;
     var asr = data[0][nas].Asar;
-    var maghrib = data[0][nas].Maghrib;
+    var maghrib = data[0][nas].Sunset;
     var isha = data[0][nas].Esha;
     $('.fajar').html(fajr);
     $('.zuhur').html(zuhur);
