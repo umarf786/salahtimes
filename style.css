@@ -18,9 +18,10 @@ body{
 }
 .boxx{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
+    ". . u . ."
     ". . u . ."
     ". . u . ."
     ". . u . ."
@@ -45,14 +46,15 @@ body{
 } */
 .container{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    ". f . a ."
-    ". g . b ."
-    ". h . c ."
-    ". i . d ."
-    ". j . e .";
+    ". g . a ."
+    ". h . b ."
+    ". i . c ."
+    ". j . d ."
+    ". k . e ."
+    ". l . f .";
     grid-row-gap:50px;
 }
 .nbox{
@@ -65,40 +67,48 @@ body{
     grid-area:a;
     font-size:70px;
 }
-.two{
+.onetwo{
     grid-area:b;
     font-size:70px;
 }
-.three{
+.two{
     grid-area:c;
     font-size:70px;
-}
-.four{
+    }
+.three{
     grid-area:d;
     font-size:70px;
 }
-.five{
+.four{
     grid-area:e;
     font-size:70px;
 }
-.none{
+.five{
     grid-area:f;
     font-size:70px;
 }
-.ntwo{
+.none{
     grid-area:g;
     font-size:70px;
 }
-.nthree{
+.nonetwo{
     grid-area:h;
     font-size:70px;
 }
-.nfour{
+.ntwo{
     grid-area:i;
     font-size:70px;
 }
-.nfive{
+.nthree{
     grid-area:j;
+    font-size:70px;
+}
+.nfour{
+    grid-area:k;
+    font-size:70px;
+}
+.nfive{
+    grid-area:l;
     font-size:70px;
 }
 @media only screen and (max-width: 1000px) {
@@ -123,40 +133,48 @@ body{
         grid-area:a;
         font-size:100px;
     }
-    .two{
+    .onetwo{
         grid-area:b;
+        font-size:100px;
+    }
+    .two{
+        grid-area:c;
         font-size:100px;
         }
     .three{
-        grid-area:c;
-        font-size:100px;
-    }
-    .four{
         grid-area:d;
         font-size:100px;
     }
-    .five{
+    .four{
         grid-area:e;
         font-size:100px;
     }
-    .none{
+    .five{
         grid-area:f;
         font-size:100px;
     }
-    .ntwo{
+    .none{
         grid-area:g;
         font-size:100px;
     }
-    .nthree{
+    .nonetwo{
         grid-area:h;
         font-size:100px;
     }
-    .nfour{
+    .ntwo{
         grid-area:i;
         font-size:100px;
     }
-    .nfive{
+    .nthree{
         grid-area:j;
+        font-size:100px;
+    }
+    .nfour{
+        grid-area:k;
+        font-size:100px;
+    }
+    .nfive{
+        grid-area:l;
         font-size:100px;
     }
     .box{
