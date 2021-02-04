@@ -66,7 +66,7 @@ $.getJSON("2021.json", function(result){
   if(n=="Feb"){
     var feb = $(result.Feb);
     var data = feb;
-    console.log(data._4);
+    console.log(data);
   } else{
     console.log("no")
   }
