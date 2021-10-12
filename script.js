@@ -68,6 +68,7 @@ $.getJSON("2021.json", function(result){
   if(n=="Oct"){
     var feb = $(result.Feb);
     var data = feb;
+    console.log(data);
     var dataday = data[0][nas];
     console.log(data[0][nas]);
 
