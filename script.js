@@ -63,9 +63,10 @@ console.log(n);
 var da = new Date();
 var na = da.getDate();
 var nas = "_" + na;
+console.log("edited");
 console.log(nas);
-$.getJSON("2021.json", function(result){
-  if(n=="Oct"){
+$.getJSON("https://raw.githubusercontent.com/umarf786/salahtimes/master/2021.json", function(result){
+  if(n==n){
     var feb = $(result.Feb);
     var data = feb;
     console.log(data);
